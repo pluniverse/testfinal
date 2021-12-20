@@ -1,0 +1,126 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+  background-color: #204b9a;
+  height: 75px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000000 !important;
+}
+
+.navbar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar-links {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 150px;
+  height: 100%;
+}
+
+.navbar-logo {
+  position: absolute;
+  top: 0;
+  left: 100px;
+  z-index: 10000000;
+}
+
+.navbar-btn {
+  background-color: #618930;
+  width: 160px;
+  height: 40px;
+  z-index: 23;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.cross-icon {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .navbar {
+    padding: 0 30px;
+  }
+
+  .navbar-logo {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    z-index: 10000000;
+  }
+}
+
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .navbar {
+    justify-content: end !important;
+  }
+  .hamburger {
+    margin-left: auto !important;
+    display: block !important;
+    opacity: 1;
+    position: relative;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  .hamburger img {
+    width: 30px;
+  }
+
+  .navbar-wrapper {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: white;
+    z-index: 1000000000;
+    flex-direction: column;
+    justify-content: unset;
+    align-items: unset;
+    padding: 2rem;
+    gap: 1rem;
+    transition: all 0.2s ease;
+  }
+
+  .navbar-wrapper.show {
+    right: 0;
+  }
+
+  .navbar-links {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 0px;
+    height: auto;
+    justify-content: unset;
+    align-items: unset;
+  }
+
+  .navbar-link {
+    color: black;
+  }
+
+  .cross-icon {
+    display: block;
+    width: 20px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+}

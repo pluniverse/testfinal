@@ -1,0 +1,322 @@
+/* ----global---Bootstrap like Classes */
+
+.d-flex {
+    display: flex;
+  }
+  
+  .align-items-center {
+    align-items: center;
+  }
+  
+  .justify-content-center {
+    justify-content: center;
+  }
+  
+  .flex-column {
+    flex-direction: column;
+  }
+  
+  .mb-4 {
+    margin-bottom: 24px;
+  }
+  
+  .mb-5 {
+    margin-bottom: 48px;
+  }
+  
+  .mt-2 {
+    margin-top: 8px;
+  }
+  
+  .mb-2 {
+    margin-bottom: 8px;
+  }
+  
+  .mt-3 {
+    margin-top: 16px;
+  }
+  
+  .mt-4 {
+    margin-top: 24px;
+  }
+  
+  .mb-2 {
+    margin-bottom: 8px;
+  }
+  
+  .mr-5 {
+    margin-right: 48px;
+  }
+  
+  .py-3 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  
+  .border-0 {
+    border: 0;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-light {
+    color: white;
+  }
+  
+  .text-decoration-none {
+    text-decoration: none;
+  }
+  
+  .list-unstyled {
+    list-style: none;
+  }
+  
+  /* ----global---Bootstrap like Classes */
+  
+
+/* ------- Start Badge Section section Styling-------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap");
+
+.badge-section-parent {
+  max-width: 2200px;
+  margin-top: 75px;
+  background-image: url(assets/images/badge_Section/background_badge_section.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.badge-section-main {
+  max-width: 1380px;
+}
+.badge-heading-section {
+  margin-top: 60px;
+  margin-bottom: 55px;
+}
+
+.founder-header {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+}
+
+.founder-para {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  width: 751px;
+  margin: 0 auto;
+}
+
+.badge-card {
+  background-color: whitesmoke;
+
+  border-bottom-right-radius: 35px;
+  border-top-left-radius: 35px;
+  max-width: 370px;
+}
+
+.card-img {
+  width: 260px !important;
+  height: 260px;
+}
+.card-main-header {
+  font-family: "Poppins", sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.card-content-ul {
+  padding: 0 60px !important;
+  margin-bottom: 10px;
+}
+
+.card-content-header {
+  font-family: "Poppins", sans-serif;
+  font-size: 23px;
+
+  font-weight: 700;
+}
+
+.card-content-detail {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+.usdc-card-text,
+.nft-btn,
+.ramaining-card-text {
+  font-weight: 600;
+}
+.usdc-card-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+}
+
+.nft-btn {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+
+  width: 183px;
+  height: 38px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.ramaining-card-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+}
+
+.badge-note {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+div div .conqueror-badge-card {
+  margin-right: 0px !important;
+}
+
+/* -------Badge Section Media Queriers-------- */
+
+@media screen and (min-width: 1200px) and (max-width: 1450px) {
+  div div .badge-card {
+    margin-right: 25px;
+    max-width: 270px;
+  }
+
+  .card-img {
+    width: 230px !important;
+    height: 230px !important;
+  }
+  .card-content-ul {
+    padding: 0 40px !important;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  div div .badge-card {
+    margin-right: 23px;
+    max-width: 230px;
+  }
+
+  .card-img {
+    width: 159px !important;
+    height: 159px !important;
+  }
+}
+
+@media screen and (max-width: 1190px) {
+  .card-img {
+    width: 159px !important;
+    height: 159px !important;
+  }
+  .card-content-ul {
+    padding: 0 30px !important;
+  }
+  .card-main-header {
+    font-size: 22px;
+  }
+  .card-content-header {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 1023px) {
+  .badge-note {
+    margin-top: 0px !important;
+  }
+  .badge-cards-parent {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 40px;
+  }
+
+  div div .badge-card {
+    margin-right: 0px !important;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 1450px) {
+  .founder-para {
+    padding: 0 30px;
+  }
+}
+@media screen and (min-width: 801px) and (max-width: 1023px) {
+  div div .badge-card {
+    max-width: 340px;
+    margin-bottom: 70px;
+  }
+  .card-content-ul {
+    padding: 0 70px !important;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .badge-note {
+    padding: 0 40px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .badge-section-main {
+    margin-top: 10px;
+  }
+  .founder-para {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 630px) and (max-width: 800px) {
+  div div .badge-card {
+    max-width: 270px;
+    margin-bottom: 50px;
+  }
+
+  .card-content-ul {
+    padding: 0 40px !important;
+  }
+}
+
+@media screen and (min-width: 421px) and (max-width: 629px) {
+  .founder-header {
+    font-size: 26px;
+  }
+
+  .badge-section-parent {
+    background-size: cover;
+  }
+
+  div div .badge-card {
+    max-width: 316px;
+    margin-bottom: 50px;
+  }
+
+  .card-content-ul {
+    padding: 0 40px !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .founder-para {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 420px) {
+  .founder-header {
+    font-size: 26px;
+  }
+
+  .badge-section-parent {
+    background-size: cover;
+  }
+  div div .badge-card {
+    max-width: 280px;
+    margin-bottom: 50px;
+  }
+
+  .card-content-ul {
+    padding: 0 40px !important;
+  }
+}
+
+/* ------- End Badge Section section Styling-------------- */

@@ -1,0 +1,136 @@
+.roadmap-card {
+  position: relative;
+  width: 115px;
+  height: 116px;
+}
+
+.roadmap-card-title-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.roadmap-card-content-wrapper {
+  position: absolute;
+  top: 50%;
+  /* transform: translateY(-50%); */
+
+  width: 550px;
+
+  display: flex;
+
+  gap: 2rem;
+}
+
+.roadmap-card-content-wrapper.right {
+  left: 120%;
+}
+.roadmap-card-content-wrapper.left {
+  right: 120%;
+  flex-direction: row-reverse;
+}
+
+.roadmap-card-content-wrapper.left .roadmap-card-content-left {
+  display: flex;
+  justify-content: end;
+  align-items: flex-start;
+}
+.roadmap-card-content-wrapper.left .roadmap-card-content-left img {
+  transform: rotate(180deg);
+}
+
+.roadmap-card-content-left {
+  flex: 1;
+}
+
+.roadmap-card-content-left img {
+  width: 100%;
+}
+
+.roadmap-card-content-right {
+  flex: 1;
+}
+
+@media (max-width: 1400px) {
+  .roadmap-card-content-right-title {
+    font-size: 20px;
+  }
+  .roadmap-card-content-right-points {
+    font-size: 16px;
+  }
+
+  .roadmap-card-content-left {
+    flex: 0.5;
+  }
+
+  .roadmap-card-content-wrapper {
+    /* border: 2px solid red; */
+    width: 450px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .roadmap-card-content-wrapper {
+    width: 35vw;
+  }
+}
+
+@media (max-width: 760px) {
+  .roadmap-card {
+    position: relative;
+    width: auto;
+    height: auto;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .roadmap-card:not(:last-child) {
+    padding-bottom: 2rem;
+  }
+
+  .roadmap-card-content-left {
+    display: none;
+  }
+
+  .roadmap-card-title-img {
+    width: 115px;
+  }
+  .roadmap-card-content-wrapper {
+    position: static;
+    top: 0;
+    width: 400px;
+
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+  }
+
+  .roadmap-card-content-right {
+    width: 100%;
+    text-align: center;
+    background-color: #d0d4d8;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+
+  .roadmap-card-content-right p {
+    color: black !important;
+  }
+  .roadmap-card-content-left-img {
+    display: none;
+  }
+
+  .roadmap-card-content-wrapper.left .roadmap-card-content-left {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .roadmap-card-content-wrapper {
+    width: 300px;
+  }
+}

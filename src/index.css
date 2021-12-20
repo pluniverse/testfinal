@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+@font-face {
+  font-family: "WAGHU-PersonalUse";
+  src: url(./assets/font/WAGHU-PersonalUse.otf);
+}
+
+.waghu-family {
+  font-family: "WAGHU-PersonalUse" !important;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 100%;
+
+  --font-size-16px: 1rem;
+  --font-size-18px: clamp(14px, 1.0416666666666667vw, 18px);
+  --font-size-20px: clamp(16px, 1.25vw, 20px);
+  --font-size-28px: clamp(22px, 1.7361111111111112vw, 28px);
+  --font-size-25px: clamp(18px, 1.5972222222222223vw, 25px);
+  --font-size-22px: clamp(16px, 1.3888888888888888vw, 22px);
+  --font-size-40px: clamp(22px, 2.5vw, 40px);
+  --font-size-30px: clamp(22px, 1.8055555555555556vw, 30px);
+  --font-size-57px: clamp(48px, 3.9583333333333335vw, 57px);
+  --font-size-70px: clamp(40px, 4.861111111111111vw, 70px);
+  --font-size-75px: clamp(40px, 5.208333333333333vw, 75px);
+}
+
+/* font-sizes */
+.fs-16px {
+  font-size: var(--font-size-16px);
+}
+.fs-18px {
+  font-size: var(--font-size-18px);
+}
+.fs-20px {
+  font-size: var(--font-size-20px);
+}
+.fs-25px {
+  font-size: var(--font-size-25px);
+}
+.fs-22px {
+  font-size: var(--font-size-22px);
+}
+.fs-28px {
+  font-size: var(--font-size-28px);
+}
+.fs-30px {
+  font-size: var(--font-size-30px);
+}
+.fs-40px {
+  font-size: var(--font-size-40px);
+}
+.fs-57px {
+  font-size: var(--font-size-57px);
+}
+.fs-70px {
+  font-size: var(--font-size-70px);
+}
+.fs-75px {
+  font-size: var(--font-size-75px);
+}
+
+/* color */
+.white {
+  color: white;
+}
+.green {
+  color: #88c232;
+}
+
+/* line-heights */
+.lh-1 {
+  line-height: 1.2;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    rgba(37, 135, 184, 1) 28%,
+    rgba(153, 208, 229, 1) 100%
+  );
+}
+.container .Canvas svg {
+  height: 100vh;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#crystalGlows > * {
+  filter: blur(20px);
+}
+
+/* container-wrapper */
+.container-wrapper {
+  max-width: 1600px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/*  */
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* font-weights */
+.weight-9 {
+  font-weight: 900;
+}
+.weight-8 {
+  font-weight: 800;
+}
+.weight-7 {
+  font-weight: 700;
+}
+.weight-6 {
+  font-weight: 600;
+}
+.weight-5 {
+  font-weight: 500;
+}
+.weight-4 {
+  font-weight: 400;
+}
+.weight-3 {
+  font-weight: 300;
+}
+
+/* margins */
+.mb-8px {
+  margin-bottom: 8px;
+}
+.mb-5px {
+  margin-bottom: 5px;
+}

@@ -1,0 +1,33 @@
+.special-features-cards {
+  margin-top: 1rem;
+  width: 50%;
+}
+.special-features-card {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+  border-bottom: 3px solid #566d44;
+}
+
+.special-features-card-right-subtitle {
+  font-size: 22px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+}
+
+@media (max-width: 1000px) {
+  .special-features-cards {
+    width: 100%;
+  }
+}
+@media (max-width: 450px) {
+  .special-features-card {
+    flex-direction: column;
+    justify-content: unset;
+    align-items: unset;
+    gap: 1rem;
+  }
+}
